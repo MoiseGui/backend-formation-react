@@ -64,7 +64,7 @@ public class NemoService {
     }
 
     public List<Nemo> getAllNemos() {
-        return nemoRepository.findAll();
+        return nemoRepository.findAllByOrderByIdDesc();
     }
 
 }

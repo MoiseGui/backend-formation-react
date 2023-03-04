@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface NemoRepository extends JpaRepository<Nemo, Long> {
     List<Nemo> findByStatus(Status status);
+    List<Nemo> findAllByOrderByIdDesc();
 }
 
